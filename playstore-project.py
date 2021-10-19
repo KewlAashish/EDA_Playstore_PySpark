@@ -286,7 +286,7 @@ print(Applications.count())
 # Basically comparing if Last_Updated < 31 July, 2013.
 
 spark.sql("SELECT * FROM Applications \
-           WHERE Last_Updated NOT BETWEEN CAST('JUL 31,2018' AS date) AND CAST('JUL 31, 2019' AS date)").show()
+           WHERE Last_Updated NOT BETWEEN CAST('JUL 31,2013' AS date) AND CAST('JUL 31, 2019' AS date)").show()
 
 
 
